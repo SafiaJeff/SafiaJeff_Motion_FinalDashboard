@@ -11,6 +11,7 @@ import { skyStartTL } from "./skyStart";
 import { cowSuckTL } from "./cowSuck";
 import { blastOffTL } from "./blastOff";
 import { flightPathTL } from "./flightPath";
+import { cowSpitTL } from "./cowSpit";
 
 
 // Main Timeline
@@ -22,6 +23,7 @@ mainTL.add(skyStartTL, "-=3.5");
 mainTL.add(cowSuckTL, "-=1");
 mainTL.add(blastOffTL, "-=1.5");
 mainTL.add(flightPathTL);
+mainTL.add(cowSpitTL);
 
 
 // DEV Tools
