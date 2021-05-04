@@ -113,6 +113,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/cowSpit.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/cowSpit-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/cowSuck.js": {
 		"bF": 0,
 		"ft": 64,
@@ -120,6 +131,28 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/cowSuck-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/flightPath-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/flightPath-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/flightPath.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/flightPath-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
