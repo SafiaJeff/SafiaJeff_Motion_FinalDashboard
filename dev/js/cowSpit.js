@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 
 export let cowSpitTL = gsap.timeline();
 
+// gsap.set("#Cow",{zIndex:"10000"});
+
 cowSpitTL
 
 .to("#alienEnergy path",{duration: 2, stagger: .25, display:"block", scale:1, ease: "elastic.out(1, 0.2)"})
