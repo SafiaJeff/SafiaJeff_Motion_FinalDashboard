@@ -17,6 +17,6 @@ blastOffTL
 .to("#Ground",{duration:2, y:"+=700", ease: "power3.in"}, "upAndAway")
 .to("#Trees",{duration:2, y:"+=800", ease: "power3.in"}, "upAndAway")
 .to("#SkyColor",{duration:2, fill:"#2F4858", ease: "power3.in"}, "upAndAway")
-.fromTo("#Stars", {display:"block", alpha:0}, {duration: 2, alpha:1, ease: "none"}, "-=1.5")
+.fromTo("#Stars", {display:"block", alpha:0}, {duration: 1, alpha:1, ease: "none"}, "-=1.5")
 
 ;

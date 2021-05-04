@@ -10,7 +10,7 @@ export let flightPathTL = gsap.timeline();
 
 flightPathTL
 
-.to("#SpaceshipAlien",{duration:7, 
+.to("#SpaceshipAlien",{duration:6, 
     motionPath: {
         path: "#motionPath",
         align: "#motionPath"
