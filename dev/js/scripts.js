@@ -12,6 +12,7 @@ import { cowSuckTL } from "./cowSuck";
 import { blastOffTL } from "./blastOff";
 import { flightPathTL } from "./flightPath";
 import { cowSpitTL } from "./cowSpit";
+import { zoomOutTL } from "./zoomOut";
 
 
 // Main Timeline
@@ -24,6 +25,7 @@ mainTL.add(cowSuckTL, "-=1");
 mainTL.add(blastOffTL, "-=1.5");
 mainTL.add(flightPathTL);
 mainTL.add(cowSpitTL);
+mainTL.add(zoomOutTL);
 
 
 // DEV Tools
