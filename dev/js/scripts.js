@@ -23,7 +23,7 @@ mainTL.add(midAppearTL, "-=2.5");
 mainTL.add(skyStartTL, "-=3.5");
 mainTL.add(cowSuckTL, "-=1");
 mainTL.add(blastOffTL, "-=1.5");
-mainTL.add(flightPathTL);
+mainTL.add(flightPathTL, "-=1.5");
 mainTL.add(cowSpitTL);
 mainTL.add(zoomOutTL);
 
