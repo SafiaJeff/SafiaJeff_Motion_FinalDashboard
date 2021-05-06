@@ -1,1 +1,0 @@
-import{gsap}from"gsap";import{MotionPathPlugin}from"gsap/MotionPathPlugin";gsap.registerPlugin(MotionPathPlugin);export let flightPathTL=gsap.timeline();flightPathTL.to("#SpaceshipAlien",{duration:15,motionPath:{path:"#motionPath",align:"#motionPath",autoRotate:!0},ease:"power4.out"});
