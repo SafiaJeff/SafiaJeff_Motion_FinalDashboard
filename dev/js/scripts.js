@@ -10,6 +10,7 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 // My Imports
 import { starsTL } from "./stars";
 import { logoTL } from "./logo";
+import { logoFadeOutTL } from "./logoFadeOut";
 
 
 // Main Timeline
@@ -17,6 +18,7 @@ let mainTL = gsap.timeline();
 
 mainTL.add(starsTL);
 mainTL.add(logoTL,"-=2");
+mainTL.add(logoFadeOutTL);
 
 
 
