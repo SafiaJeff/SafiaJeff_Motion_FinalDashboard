@@ -64,6 +64,46 @@
 		"oAP": "/dev/content/svg/dashboard.html",
 		"oF": 0
 		},
+	"/dev/content/svg/dashboard/dashNav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg/dashboard/dashNav.html",
+		"oF": 0
+		},
+	"/dev/content/svg/dashboard/gauges/dashGas.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg/dashboard/gauges/dashGas.html",
+		"oF": 0
+		},
+	"/dev/content/svg/dashboard/gauges/dashMPH.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg/dashboard/gauges/dashMPH.html",
+		"oF": 0
+		},
+	"/dev/content/svg/dashboard/gauges/dashMusic.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg/dashboard/gauges/dashMusic.html",
+		"oF": 0
+		},
+	"/dev/content/svg/dashboard/gauges/dashWeather.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/svg/dashboard/gauges/dashWeather.html",
+		"oF": 0
+		},
 	"/dev/content/svg/logo.kit": {
 		"cB": 0,
 		"ft": 2048,
