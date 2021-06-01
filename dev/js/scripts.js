@@ -2,17 +2,25 @@
 // GSAP Imports
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
-gsap.registerPlugin(GSDevTools);
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+
+gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
+
 
 // My Imports
-// import { zoomTL } from "./zoomIn";
+import { starsTL } from "./stars";
+import { logoTL } from "./logo";
+import { logoFadeOutTL } from "./logoFadeOut";
 
 
 // Main Timeline
 let mainTL = gsap.timeline();
 
-// mainTL.add(zoomTL);
+mainTL.add(starsTL);
+mainTL.add(logoTL,"-=2");
+mainTL.add(logoFadeOutTL);
+
 
 
 // DEV Tools
-// GSDevTools.create();
+GSDevTools.create();
