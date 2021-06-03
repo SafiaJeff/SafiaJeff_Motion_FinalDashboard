@@ -436,3 +436,21 @@ textarea {
 #svg-container > div svg {
   width: 100%;
 }
+
+#scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#scroll > div {
+  background-color: red;
+  overflow: hidden;
+  padding: 20px 0;
+  width: 60%;
+}
+#scroll > div #scrollText {
+  color: #fff;
+  width: 100vw;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,1 @@
+import{gsap}from"gsap";import $ from"jquery";let textLength=$("#scrollContainer").width();console.log(textLength+" is the text width"),gsap.to("#scrollContainer",{duration:3,y:-textLength/2,ease:"none",repeat:-1});
