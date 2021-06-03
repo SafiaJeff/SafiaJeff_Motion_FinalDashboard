@@ -33,10 +33,8 @@ mainTL.add(navEntryTL, "-=.75");
 
 mainTL.add(musicEntryTL);
 mainTL.add(mphEntryTL);
-mainTL.add(weatherEntryTL);
 mainTL.add(gasEntryTL);
-
-
+mainTL.add(weatherEntryTL);
 
 // DEV Tools
 GSDevTools.create();
