@@ -27,7 +27,7 @@ mainTL.add(starsTL);
 mainTL.add(logoTL,"-=2");
 mainTL.add(logoFadeOutTL);
 mainTL.add(menuEntryTL,"-=.05");
-mainTL.add(navEntryTL);
+mainTL.add(navEntryTL, "-=.75");
 
 mainTL.add(mphEntryTL);
 mainTL.add(weatherEntryTL);
