@@ -160,6 +160,17 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
+	"/dev/js/circle-entry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/circle-entry-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/logo.js": {
 		"bF": 0,
 		"ft": 64,
@@ -167,17 +178,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/logo-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/logoFadeOut-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/logoFadeOut-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
