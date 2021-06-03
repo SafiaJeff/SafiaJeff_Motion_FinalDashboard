@@ -19,6 +19,8 @@ navEntryTL
 .from("#navArrow",{ duration: 1, alpha:0, y:"+=50"}, "-=.7")
 .from("#navGlow",{ duration: 1, alpha:0, y:"+=50"}, "-=1")
 
+;
+
 
 
 
