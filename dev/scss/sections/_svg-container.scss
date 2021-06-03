@@ -3,6 +3,7 @@
 	grid-template-columns: auto 80% auto;
 	grid-template-areas: ". svg-container .";
 	height: 100vh;
+	
 
 	@include md{
 		grid-template-columns: auto 70% auto;
@@ -26,7 +27,20 @@
 		}
 	}
 
-	#Flower1{
-		z-index: -200;
-	}
+	// #musicCircleGroup{
+	// 	position: relative;
+	// }
+
+
+	// #simonDominicAlbum{
+	// 	// height: 30%;
+	// 	top: 15vh;
+	// 	left: 57vw;
+	// 	position: absolute;
+	// 	display: none ;
+	// }
+	
+	// #Flower1{
+	// 	z-index: -200;
+	// }
 }

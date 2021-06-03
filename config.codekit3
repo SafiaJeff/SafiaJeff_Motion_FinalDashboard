@@ -38,6 +38,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/deploy/simondominicMASKED.png": {
+		"ft": 32768,
+		"iS": 67172,
+		"oA": 0,
+		"oAP": "/deploy/simondominicMASKED.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/design/SJ_SVG.svg": {
 		"ft": 2097152,
 		"miP": 0,
