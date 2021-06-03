@@ -165,8 +165,19 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/circle-entry-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/gasGauge.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/gasGauge-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -204,6 +215,28 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/mphGauge.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/mphGauge-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/musicGauge.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/musicGauge-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/nav-entry.js": {
 		"bF": 0,
 		"ft": 64,
@@ -233,6 +266,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/stars-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/weatherGauge.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/weatherGauge-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
