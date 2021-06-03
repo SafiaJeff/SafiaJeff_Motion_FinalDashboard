@@ -436,12 +436,3 @@ textarea {
 #svg-container > div svg {
   width: 100%;
 }
-#svg-container #musicCircleGroup {
-  position: relative;
-}
-#svg-container #simonDominicAlbum {
-  top: 15vh;
-  left: 57vw;
-  position: absolute;
-  display: none;
-}
