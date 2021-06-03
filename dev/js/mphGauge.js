@@ -20,3 +20,5 @@ mphEntryTL
 
 //Indication line
 .from("#mphIndicatorLine",{ duration: 1, drawSVG:0}, "-=1")
+
+;

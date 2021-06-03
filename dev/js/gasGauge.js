@@ -18,3 +18,6 @@ gasEntryTL
 //line & stars
 .from("#gasLine",{ duration: .75, alpha:0, drawSVG: "50% 50%", y:"+=30"}, "-=.5")
 .from("#gasStars circle",{alpha:0, duration:.5, stagger:.01, y:"+=10"},"-=.5")
+
+
+;

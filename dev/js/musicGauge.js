@@ -11,3 +11,6 @@ musicEntryTL
 //photo & icons
 .from("#albumPhotoMask",{ duration: 1.5, alpha:0}, "-=.75")
 .from("#musicIcons",{ duration: .75, y:"-=20", alpha:0}, "-=1")
+
+
+;
