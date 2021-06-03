@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 export let menuEntryTL = gsap.timeline();
 
-// gsap.set("#menuLine", { transformOrigin: "center center"});
+
 
 menuEntryTL
 .from("#spiritLogo",{duration:1.5, alpha:0}, "spirit")

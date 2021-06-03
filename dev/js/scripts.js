@@ -13,6 +13,7 @@ import { logoTL } from "./logo";
 import { logoFadeOutTL } from "./logoFadeOut";
 import { circleEntryTL } from "./circle-entry";
 import { menuEntryTL } from "./menu-entry";
+import { navEntryTL } from "./nav-entry";
 
 
 // Main Timeline
@@ -21,8 +22,9 @@ let mainTL = gsap.timeline();
 mainTL.add(starsTL);
 mainTL.add(logoTL,"-=2");
 mainTL.add(logoFadeOutTL);
-mainTL.add(circleEntryTL,"-=.05");
-mainTL.add(menuEntryTL);
+mainTL.add(menuEntryTL,"-=.05");
+mainTL.add(circleEntryTL,"-=1");
+mainTL.add(navEntryTL);
 
 
 
