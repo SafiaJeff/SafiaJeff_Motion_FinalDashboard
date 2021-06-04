@@ -4,8 +4,8 @@ export let mphEntryTL = gsap.timeline();
 gsap.set("#mphInnerCircle", { transformOrigin: "center center", rotate:"90" });
 gsap.set("#mphIndicatorLine", { transformOrigin: "center center", scaleX: -1, rotate: 114.5});
 
-// gsap.set("#mphPath2", { transformOrigin: "center center", scaleY: -1});
-// gsap.set("#mphPath4", { transformOrigin: "center center", scaleX: -1, scaleY: -1});
+gsap.set("#mphPath2", { transformOrigin: "center center", scaleY: -1});
+gsap.set("#mphPath4", { transformOrigin: "center center", scaleX: -1, scaleY: -1});
 
 mphEntryTL
 //circles
