@@ -436,7 +436,6 @@ textarea {
 }
 #svg-container > div section {
   position: relative;
-  border: solid 1px red;
   width: 100%;
 }
 #svg-container > div section img {
@@ -447,4 +446,45 @@ textarea {
 }
 #svg-container > div section svg {
   width: 100%;
+}
+#svg-container > div section #speed {
+  top: 22%;
+  left: 24%;
+  position: absolute;
+}
+@media (min-width: 992px) {
+  #svg-container > div section #speed {
+    top: 20%;
+    left: 23%;
+  }
+}
+@media (min-width: 1200px) {
+  #svg-container > div section #speed {
+    top: 20%;
+    left: 23%;
+  }
+}
+
+#speedTag {
+  top: 100%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: 35px;
+}
+@media (min-width: 768px) {
+  #speedTag {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #speedTag {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #speedTag {
+    font-size: 65px;
+  }
 }

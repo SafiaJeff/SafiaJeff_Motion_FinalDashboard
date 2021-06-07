@@ -1,0 +1,23 @@
+
+
+    #speedTag{
+      top:100%;
+       color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      letter-spacing: 10px;
+      font-size: 35px;
+
+      @include md{
+        font-size: 40px;
+      }
+      
+      @include lg{
+        font-size: 50px;
+      }
+
+      @include xl{
+        font-size: 65px;
+      }
+      
+    }
