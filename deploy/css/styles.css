@@ -436,7 +436,6 @@ textarea {
 }
 #svg-container > div section {
   position: relative;
-  border: solid 1px red;
   width: 100%;
 }
 #svg-container > div section img {
@@ -448,12 +447,25 @@ textarea {
 #svg-container > div section svg {
   width: 100%;
 }
-
-#speed {
+#svg-container > div section #speed {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 10%;
-  left: 50%;
+}
+@media (min-width: 992px) {
+  #svg-container > div section #speed {
+    top: 20%;
+    left: 23%;
+  }
+}
+
+#speedTag {
+  top: 100%;
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+@media (min-width: 992px) {
+  #speedTag {
+    font-size: 80px;
+  }
 }

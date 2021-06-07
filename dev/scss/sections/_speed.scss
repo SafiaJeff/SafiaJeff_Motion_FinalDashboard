@@ -1,13 +1,14 @@
-#speed{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top:10%;
-    left: 50%;
-    color: white;
 
 
-    >div{
-		// border: 1px solid red;
-	}
-}
+    #speedTag{
+      top:100%;
+       color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      letter-spacing: 10px;
+
+      @include lg{
+        font-size: 80px;
+      }
+      
+    }
