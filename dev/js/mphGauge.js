@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-import { speedCounter } from "./speed";
+// import { speedCounter } from "./speed";
 export let mphEntryTL = gsap.timeline();
 
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
@@ -18,7 +18,8 @@ mphEntryTL
 .from("#mphOuterCircle path",{alpha:0, duration: 1.75, drawSVG:0}, "mph")
 
 //tick marks & #s
-.from("#mphGaugeLines path",{ duration: 1, scale:0, onComplete: speedCounter}, "-=1")
+.from("#mphGaugeLines path",{ duration: 1, scale:0}, "-=1")
+// , onComplete: speedCounter
 .from("#navNumbers path",{ duration: 1, alpha:0}, "-=1")
 
 //counter ...
