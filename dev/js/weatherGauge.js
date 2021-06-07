@@ -1,4 +1,8 @@
 import { gsap } from "gsap";
+
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
+
 export let weatherEntryTL = gsap.timeline();
 
 gsap.set("#weatherInnerCircle", { transformOrigin: "center center", rotate:"90" });

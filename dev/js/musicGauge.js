@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
 export let musicEntryTL = gsap.timeline();
 
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
+
 gsap.set("#musicInnerCircle", { transformOrigin: "center center", rotate:"90" });
 
 musicEntryTL
