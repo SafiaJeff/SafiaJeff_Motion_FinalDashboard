@@ -448,3 +448,12 @@ textarea {
 #svg-container > div section svg {
   width: 100%;
 }
+
+#speed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  color: white;
+}
