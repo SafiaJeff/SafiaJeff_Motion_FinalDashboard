@@ -1,0 +1,23 @@
+#scroll {
+    // position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+    >div {
+    //   background-color: $blue;
+      overflow: hidden;
+      padding: 20px 0;
+      width: 60%;
+ 
+      #scrollContainer{
+        width: 100vw;
+  
+        p{
+          font-size: rem-calc(40);
+          margin-right: 10px;
+        }
+      }
+    }
+  }

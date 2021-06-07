@@ -448,3 +448,22 @@ textarea {
 #svg-container > div section svg {
   width: 100%;
 }
+
+#scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#scroll > div {
+  overflow: hidden;
+  padding: 20px 0;
+  width: 60%;
+}
+#scroll > div #scrollContainer {
+  width: 100vw;
+}
+#scroll > div #scrollContainer p {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
