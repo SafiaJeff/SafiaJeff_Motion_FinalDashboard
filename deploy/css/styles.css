@@ -417,6 +417,7 @@ textarea {
   grid-template-columns: auto 80% auto;
   grid-template-areas: ". svg-container .";
   height: 100vh;
+  background-color: black;
 }
 @media (min-width: 768px) {
   #svg-container {
@@ -425,7 +426,7 @@ textarea {
 }
 @media (min-width: 992px) {
   #svg-container {
-    grid-template-columns: auto 60% auto;
+    grid-template-columns: auto 65% auto;
   }
 }
 #svg-container > div {
@@ -433,6 +434,17 @@ textarea {
   align-items: center;
   grid-area: svg-container;
 }
-#svg-container > div svg {
+#svg-container > div section {
+  position: relative;
+  border: solid 1px red;
+  width: 100%;
+}
+#svg-container > div section img {
+  position: absolute;
+  top: 9.15%;
+  right: 19.5%;
+  height: 25.75%;
+}
+#svg-container > div section svg {
   width: 100%;
 }
