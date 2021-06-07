@@ -3,28 +3,51 @@
 	grid-template-columns: auto 80% auto;
 	grid-template-areas: ". svg-container .";
 	height: 100vh;
-	
+	background-color: black;
 
 	@include md{
 		grid-template-columns: auto 70% auto;
 	}
 
 	@include lg{
-		grid-template-columns: auto 60% auto;
+		grid-template-columns: auto 65% auto;
 	}
 
 	// @include xl{
 	// 	grid-template-columns: auto 1200px auto;
 	// }
 	>div {
+		
 		display: flex;
 		align-items: center;
 		
+		
 		grid-area: svg-container;
 
-		svg{
+		section{
+			position: relative;
+			border: solid 1px red;
 			width: 100%;
+
+			img{
+				position: absolute;
+				top:9.15%;
+				right:19.5%;
+				height: 25.75%;
+
+				// @include lg{
+				// 	top:9.25%;
+				// 	right:18%;
+				// 	height: 26%;
+				// }
+				
+			}
+			svg{
+				width: 100%;
+			}
 		}
+
+		
 	}
 
 	// #musicCircleGroup{
