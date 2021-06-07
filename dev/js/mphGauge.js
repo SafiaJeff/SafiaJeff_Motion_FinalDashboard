@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
 export let mphEntryTL = gsap.timeline();
 
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
+
 gsap.set("#mphInnerCircle", { transformOrigin: "center center", rotate:"90" });
 gsap.set("#mphIndicatorLine", { transformOrigin: "center center", scaleX: -1, rotate: 114.5});
 

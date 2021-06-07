@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
 export let gasEntryTL = gsap.timeline();
 
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
+
 
 gsap.set("#gasInnerCircle", { transformOrigin: "center center", rotate:"90" });
 gsap.set("#gasOuterCircle", { transformOrigin: "center center", rotate:"90" });

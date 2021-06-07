@@ -1,6 +1,8 @@
 import { gsap } from "gsap";
 export let menuEntryTL = gsap.timeline();
 
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
 
 
 menuEntryTL

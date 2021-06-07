@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
 export let logoTL = gsap.timeline();
 
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
+
 gsap.set("#ghostText",{transformOrigin:"center center"});
 
 logoTL
