@@ -37,4 +37,4 @@ mainTL.add(gasEntryTL);
 mainTL.add(weatherEntryTL);
 
 // DEV Tools
-// GSDevTools.create();
+GSDevTools.create();
