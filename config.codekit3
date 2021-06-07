@@ -49,14 +49,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/deploy/scrollText.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/scrollText.html",
-		"oF": 0
-		},
 	"/design/SJ_SVG.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -66,14 +58,6 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
-		},
-	"/dev/content/scrollText.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/scrollText.html",
-		"oF": 2
 		},
 	"/dev/content/svg-container.kit": {
 		"cB": 0,
@@ -286,17 +270,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/scrollText.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/scrollText-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/stars.js": {
 		"bF": 0,
 		"ft": 64,
@@ -445,19 +418,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/dev/scss/sections/_scroll.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_scroll.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
