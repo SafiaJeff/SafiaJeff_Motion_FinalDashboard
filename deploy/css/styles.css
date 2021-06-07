@@ -462,6 +462,8 @@ textarea {
 }
 #scroll > div #scrollContainer {
   width: 100vw;
+  border: 1px solid red;
+  display: flex;
 }
 #scroll > div #scrollContainer p {
   font-size: 2.5rem;

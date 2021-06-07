@@ -1,11 +1,9 @@
 
 // GSAP Imports
 import { gsap } from "gsap";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
-
+import $ from "jquery"
 
 // My Imports
 import { starsTL } from "./stars";
@@ -19,6 +17,8 @@ import { gasEntryTL } from "./gasGauge";
 import { musicEntryTL } from "./musicGauge";
 import { mphEntryTL } from "./mphGauge";
 import { weatherEntryTL } from "./weatherGauge";
+
+gsap.registerPlugin(DrawSVGPlugin);
 
 
 // Main Timeline
@@ -37,11 +37,15 @@ mainTL.add(gasEntryTL);
 mainTL.add(weatherEntryTL);
 
 //Scroll
-import $ from "jquery"
-let textLength = $("#scrollContainer").width();
-// console.log(textLength + " is the text width");
 
-gsap.to("#scrollContainer",{duration:3, y:-textLength/2, ease:"none", repeat:-1});
+$( document ).ready(function() {
+    let textLength = $("#scrollContainer").width();
+    // console.log(textLength + " is the text width");
+
+gsap.to("#scrollContainer",{duration:3, x:-textLength/2, ease:"none", repeat:-1});
+});
+
+
 
 // DEV Tools
 // GSDevTools.create();
