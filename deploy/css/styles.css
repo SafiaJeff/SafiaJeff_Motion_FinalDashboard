@@ -464,6 +464,11 @@ textarea {
   font-weight: 100;
   letter-spacing: 10px;
 }
+@media (min-width: 768px) {
+  #speedTag {
+    font-size: 10px;
+  }
+}
 @media (min-width: 992px) {
   #speedTag {
     font-size: 80px;

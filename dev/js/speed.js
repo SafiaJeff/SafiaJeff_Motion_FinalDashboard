@@ -6,6 +6,8 @@ Change the counter speed for how fast your want your number to go up. 1000 is eq
 500 = 1/2 second
 250 = 1/4 second
 */
+
+
 var counterSpeed = 80;
 
 // Set this number you want your counter to count up to. Default is 20
@@ -17,7 +19,10 @@ var speedNumber = 0;
 var myVar = setInterval(speedCounter, counterSpeed);
 
 export function speedCounter() {
-	speedCounter({paused:true});
+	// speedCounter({paused:true});
+	// speedCounter.timeline({paused:true});
+	// speedCounter
+	// gsap.timeline({paused:true});
 
 	if (speedNumber < topSpeed) {
 		speedNumber++;
@@ -27,5 +32,6 @@ export function speedCounter() {
 	}
 	return speedNumber;
 }
+
 
 
