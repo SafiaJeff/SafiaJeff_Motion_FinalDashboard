@@ -20,11 +20,14 @@ import { musicEntryTL } from "./musicGauge";
 import { mphEntryTL } from "./mphGauge";
 import { weatherEntryTL } from "./weatherGauge";
 
-import $ from "jquery"
+// import $ from "jquery"
 // import { speedCounter } from "./speed";
 
 // Main Timeline
 let mainTL = gsap.timeline();
+
+// let mainTL = gsap.timeline({paused:true});
+
 
 mainTL.add(starsTL);
 mainTL.add(logoTL,"-=2");
@@ -39,12 +42,12 @@ mainTL.add(gasEntryTL);
 mainTL.add(weatherEntryTL);
 
 //Counter
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    // let numberToCount = document.getElementById("speedTag");
-    // console.log(numberToCount);
-    // speedCounter();
-});
+//     // let numberToCount = document.getElementById("speedTag");
+//     // console.log(numberToCount);
+//     // speedCounter();
+// });
 
 // DEV Tools
 // GSDevTools.create();

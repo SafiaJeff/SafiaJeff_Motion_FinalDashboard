@@ -17,6 +17,7 @@ var speedNumber = 0;
 var myVar = setInterval(speedCounter, counterSpeed);
 
 export function speedCounter() {
+	speedCounter({paused:true});
 
 	if (speedNumber < topSpeed) {
 		speedNumber++;
@@ -26,3 +27,5 @@ export function speedCounter() {
 	}
 	return speedNumber;
 }
+
+
