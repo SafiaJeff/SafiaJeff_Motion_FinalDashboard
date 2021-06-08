@@ -37,10 +37,10 @@ mainTL.add(logoFadeOutTL);
 mainTL.add(menuEntryTL,"-=.05");
 mainTL.add(navEntryTL, "-=.75");
 
-mainTL.add(musicEntryTL);
-mainTL.add(mphEntryTL);
-mainTL.add(gasEntryTL);
-mainTL.add(weatherEntryTL);
+mainTL.add(mphEntryTL, "-=.5");
+mainTL.add(musicEntryTL,"-=.25");
+mainTL.add(gasEntryTL,"-=.5");
+mainTL.add(weatherEntryTL, "-=.5");
 
 //Scroll
 $( document ).ready(function() {
