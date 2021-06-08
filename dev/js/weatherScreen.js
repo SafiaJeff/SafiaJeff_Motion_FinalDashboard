@@ -23,5 +23,19 @@ weatherScreenTL
 .from("#weatherGlow",{ duration: 1, alpha:0}, "-=1")
 
 //Big rain icon
-.from("#bigCloud",{duration: 1, drawSVG:0, ease:"none"}, "-=.5")
+.from("#bigCloud",{duration: 1, drawSVG:0, ease:"none" }, "-=.5")
+// onComplete: controlRain
 .from("#rainLines path",{duration: 1, alpha:0}, "-=.25")
+
+//Rain Loop
+
+// export let rainLoopTL = gsap.timeline({paused:true});
+
+// rainLoopTL
+// .to("#rainEven",{duration:.5, alpha: 0, yoyo:true, repeat:-1},"rain")
+// .to("#rainOdd",{duration:.6, alpha: 0, yoyo:true, repeat:-1},"rain")
+
+// function controlRain(){
+//     // gsap.set(".flames",{display:"block"});
+//     rainLoopTL.play()
+// }
