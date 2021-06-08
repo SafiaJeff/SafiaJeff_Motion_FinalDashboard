@@ -60,4 +60,4 @@ $( document ).ready(function() {
 
 
 // DEV Tools
-GSDevTools.create(); 
+// GSDevTools.create(); 
