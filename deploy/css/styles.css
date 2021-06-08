@@ -461,7 +461,7 @@ textarea {
 @media (min-width: 1200px) {
   #svg-container > div #svg-content #speed {
     top: 20%;
-    left: 23%;
+    left: 24%;
   }
 }
 
@@ -491,16 +491,33 @@ textarea {
 
 #scroll {
   overflow: hidden;
-  width: 150px !important;
-  border: 1px solid red;
-  height: 50px;
+  width: 100px !important;
+  height: 20px;
   white-space: nowrap;
   position: absolute;
+  top: 40%;
+  right: 20%;
+}
+@media (min-width: 768px) {
+  #scroll {
+    width: 110px !important;
+    height: 20px;
+    top: 40%;
+    right: 20.5%;
+  }
 }
 @media (min-width: 992px) {
   #scroll {
+    width: 150px !important;
+    top: 39.5%;
+    right: 20.5%;
+  }
+}
+@media (min-width: 1200px) {
+  #scroll {
+    width: 180px !important;
     top: 40%;
-    left: 20%;
+    right: 21%;
   }
 }
 #scroll #scrollContainer {
@@ -509,12 +526,30 @@ textarea {
   white-space: nowrap;
 }
 #scroll #scrollContainer h1 {
-  font-size: 20px;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  letter-spacing: 3px;
   margin: 0;
   padding-left: 0px;
-  border: 1px solid blue;
   width: 250px;
   color: white;
+}
+@media (min-width: 768px) {
+  #scroll #scrollContainer h1 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  #scroll #scrollContainer h1 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #scroll #scrollContainer h1 {
+    font-size: 18px;
+    width: 300px;
+  }
 }
 #scroll #scrollContainer h1 span {
   color: black;

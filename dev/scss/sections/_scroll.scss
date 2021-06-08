@@ -1,15 +1,32 @@
 #scroll {
 	overflow: hidden;
-	width: 150px !important;
+	width: 100px !important;
 	// display: inline-block;
-	border: 1px solid red;
-	height: 50px;
+	// border: 1px solid red;
+	height: 20px;
 	white-space: nowrap;
 	position: absolute;
 
-	@include lg {
+	top: 40%;
+	right: 20%;
+
+	@include md {
+		width: 110px !important;
+		height: 20px;
 		top: 40%;
-		left: 20%;
+		right: 20.5%;
+	}
+
+	@include lg {
+		width: 150px !important;
+		top: 39.5%;
+		right: 20.5%;
+	}
+
+	@include xl {
+		width: 180px !important;
+		top: 40%;
+		right: 21%;
 	}
 
 
@@ -20,16 +37,36 @@
 		white-space: nowrap;
 
 		h1 {
-			font-size: 20px;
+			font-size: 11px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 100;
+			letter-spacing: 3px;
+
+			@include md {
+				font-size: 14px;
+			}
+
+			@include lg {
+				font-size: 16px;
+			}
+
+			@include xl {
+				font-size: 18px;
+				width: 300px;
+			}
+			
+
+
 			margin: 0;
 			padding-left: 0px;
-			border: 1px solid blue;
+			// border: 1px solid blue;
 			width: 250px;
 			color: white;
 
-			span{
-				color:black;
+			span {
+				color: black;
 			}
+
 			// flex-wrap: nowrap;
 		}
 	}
