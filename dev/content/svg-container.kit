@@ -1,55 +1,68 @@
 <section id="svg-container">
 	<div>
 		<section>
-			<img id="simonDominicAlbum" src="img/simondominicMASKED.png" alt="Simon Dominic album cover with dark glowing hand">
-			
+			<img id="simonDominicAlbum" src="img/simondominicMASKED.png"
+				alt="Simon Dominic album cover with dark glowing hand">
+
 			<!-- <p id="speedTag">0</p> -->
+
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+				<defs>
+					<filter x="-42%" y="-88%" width="184%" height="276%" filterUnits="objectBoundingBox" id="filter-1">
+						<feGaussianBlur stdDeviation="49" in="SourceGraphic" />
+					</filter>
+					<filter x="-154.3%" y="-144.8%" width="408.7%" height="392.4%" filterUnits="objectBoundingBox"
+						id="filter-2">
+						<feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+						<feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+						<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"
+							result="shadowMatrixOuter1" />
+						<feMerge>
+							<feMergeNode in="shadowMatrixOuter1" />
+							<feMergeNode in="SourceGraphic" />
+						</feMerge>
+					</filter>
+					<filter x="-75.5%" y="-123.6%" width="250.9%" height="347.2%" filterUnits="objectBoundingBox"
+						id="filter-3">
+						<feGaussianBlur stdDeviation="50" in="SourceGraphic" />
+					</filter>
+				</defs>
+
+				<g id="SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+					<path id="blackBG" fill="#000" d="M0 0h1024v768H0z" />
+
+					<!-- @import "svg/dashboard.kit" -->
+					<!-- @import "svg/weather.kit" -->
+					<!-- @import "svg/logo.kit" -->
+
+				</g>
+
+			</svg>
+
+			<section id="speed">
+				<div>
+					<h1 id="speedTag">00</h1>
+				</div>
+			</section>
+
+			<section id="scroll">
+				<div>
+					<section id="scrollContainer">
+						<!-- <div id="scorllContent"> -->
+						<p>Simon Dominic - At Night</p>
+						<p>Simon Dominic - At Night</p>
+						<!-- </div> -->
 	
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
-			<defs>
-			  <filter x="-42%" y="-88%" width="184%" height="276%" filterUnits="objectBoundingBox" id="filter-1">
-				<feGaussianBlur stdDeviation="49" in="SourceGraphic"/>
-			  </filter>
-			  <filter x="-154.3%" y="-144.8%" width="408.7%" height="392.4%" filterUnits="objectBoundingBox" id="filter-2">
-				<feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
-				<feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-				<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
-				<feMerge>
-				  <feMergeNode in="shadowMatrixOuter1"/>
-				  <feMergeNode in="SourceGraphic"/>
-				</feMerge>
-			  </filter>
-			  <filter x="-75.5%" y="-123.6%" width="250.9%" height="347.2%" filterUnits="objectBoundingBox" id="filter-3">
-				<feGaussianBlur stdDeviation="50" in="SourceGraphic"/>
-			  </filter>
-			</defs>
-
-			<g id="SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-
-			  <path id="blackBG" fill="#000" d="M0 0h1024v768H0z"/>
-
-			  <!-- @import "svg/dashboard.kit" -->
-			  <!-- @import "svg/weather.kit" -->
-			  <!-- @import "svg/logo.kit" -->
-
-			</g>
-
-		</svg>
-
-		<section id="speed">
-			<div>
-				<h1 id="speedTag">00</h1>
-			</div>
+					</section>
+				</div>
+			</section>
+			
 		</section>
-	</section>
 
-	
-	
+		
+
+
+
 	</div>
 </section>
-
-
-
-
-
-

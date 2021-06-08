@@ -3,6 +3,7 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import $ from "jquery"
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
@@ -41,13 +42,14 @@ mainTL.add(mphEntryTL);
 mainTL.add(gasEntryTL);
 mainTL.add(weatherEntryTL);
 
-//Counter
-// $(document).ready(function () {
+//Scroll
+$( document ).ready(function() {
+    // let textLength = $("#scrollContainer").width();
+    // console.log(textLength + " is the text width");
+    gsap.to("#scrollContainer",{duration:4, x:-200, ease:"none", repeat:-1});
+});
 
-//     // let numberToCount = document.getElementById("speedTag");
-//     // console.log(numberToCount);
-//     // speedCounter();
-// });
+
 
 // DEV Tools
-GSDevTools.create();
+GSDevTools.create(); 
