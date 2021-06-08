@@ -499,23 +499,23 @@ textarea {
 }
 
 #scroll {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#scroll > div {
   overflow: hidden;
-  width: 20%;
-  border: 1px solid white;
-}
-#scroll > div #scrollContainer {
-  width: 48%;
+  width: 150px;
+  display: inline-block;
   border: 1px solid red;
-  display: flex;
-}
-#scroll > div #scrollContainer p {
-  font-size: 0.9375rem;
-  margin-right: 10px;
-  color: white;
+  height: 50px;
   white-space: nowrap;
+}
+#scroll #scrollContainer {
+  width: 242px;
+  display: flex;
+  white-space: nowrap;
+}
+#scroll #scrollContainer h1 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 0px;
+  border: 1px solid blue;
+  width: 242px;
+  color: white;
 }

@@ -51,13 +51,19 @@ mainTL.add(weatherScreenTL);
 
 
 //Scroll
-$( document ).ready(function() {
-    // let textLength = $("#scrollContainer").width();
-    // console.log(textLength + " is the text width");
-    gsap.to("#scrollContainer",{duration:4, x:-200, ease:"none", repeat:-1});
-});
+// $( document ).ready(function() {
+//     // let textLength = $("#scrollContainer").width();
+//     // console.log(textLength + " is the text width");
+//     gsap.to("#scrollContainer",{duration:4, x:-200, ease:"none", repeat:-1});
+// });
 
+// let scrollTL = gsap.timeline();
 
+// let titleWidth = $("h1").width()
+// // console.log(titleWidth); 
+// // width is 283px
 
-// DEV Tools
+// scrollTL.to("#container",{x:-titleWidth, repeat:-1, duration:3, ease:"none"});
+
+// // DEV Tools
 GSDevTools.create(); 
