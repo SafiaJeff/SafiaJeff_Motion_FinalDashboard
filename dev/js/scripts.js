@@ -21,6 +21,9 @@ import { musicEntryTL } from "./musicGauge";
 import { mphEntryTL } from "./mphGauge";
 import { weatherEntryTL } from "./weatherGauge";
 
+import { dashFadeOutTL } from "./dashFadeOut";
+
+
 // import $ from "jquery"
 // import { speedCounter } from "./speed";
 
@@ -41,6 +44,9 @@ mainTL.add(mphEntryTL, "-=.5");
 mainTL.add(musicEntryTL,"-=.25");
 mainTL.add(gasEntryTL,"-=.5");
 mainTL.add(weatherEntryTL, "-=.5");
+
+mainTL.add(dashFadeOutTL);
+
 
 //Scroll
 $( document ).ready(function() {
