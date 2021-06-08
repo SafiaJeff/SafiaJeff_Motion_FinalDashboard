@@ -23,9 +23,10 @@ mphEntryTL
 .from("#navNumbers path",{ duration: 1, alpha:0}, "-=1")
 
 //counter ...
-.from("#MPHtext",{ duration: .75, y:"-=20", alpha:0}, "-.5")
+.from("#MPHtext",{ duration: .75, y:"-=20", alpha:0}, "counter")
+.from("#speed",{ duration: .75, y:"-=20", alpha:0}, "counter")
 
 //Indication line
-.from("#mphIndicatorLine",{ duration: 1, drawSVG:0}, "-=1")
+.from("#mphIndicatorLine",{ duration: 1, drawSVG:0},"-=.5")
 
 ;
