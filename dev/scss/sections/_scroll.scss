@@ -1,29 +1,72 @@
 #scroll {
-    // position:absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // height: 5%;
-  
-    >div {
-    //   background-color: $blue;
-      overflow: hidden;
-    //   padding: 20px 0;
-      width: 20%;
-      border: 1px solid white;
+	overflow: hidden;
+	width: 150px !important;
+	// display: inline-block;
+	border: 1px solid red;
+	height: 50px;
+	white-space: nowrap;
+	position: absolute;
 
- 
-      #scrollContainer{
-        width: 48%;
-        border: 1px solid red;
-        display: flex;
-  
-        p{
-          font-size: rem-calc(15);
-          margin-right: 10px;
-          color: white;
-          white-space: nowrap;
-        }
-      }
-    }
-  }
+	@include lg {
+		top: 40%;
+		left: 20%;
+	}
+
+
+
+	#scrollContainer {
+		width: 242px;
+		display: flex;
+		white-space: nowrap;
+
+		h1 {
+			font-size: 20px;
+			margin: 0;
+			padding-left: 0px;
+			border: 1px solid blue;
+			width: 250px;
+			color: white;
+
+			span{
+				color:black;
+			}
+			// flex-wrap: nowrap;
+		}
+	}
+}
+
+
+
+
+
+
+
+// #scroll {
+//     // position:absolute;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     // height: 5%;
+
+//     >div {
+//     //   background-color: $blue;
+//       overflow: hidden;
+//     //   padding: 20px 0;
+//       width: 20%;
+//       border: 1px solid white;
+
+
+//       #scrollContainer{
+//         width: 48%;
+//         border: 1px solid red;
+//         display: flex;
+
+//         p{
+//           font-size: rem-calc(15);
+//           margin-right: 10px;
+//           color: white;
+//           white-space: nowrap;
+//         }
+//       }
+//     }
+//   }

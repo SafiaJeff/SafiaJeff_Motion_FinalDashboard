@@ -3,7 +3,7 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import $ from "jquery"
+// import $ from "jquery"
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
@@ -30,34 +30,43 @@ import { weatherScreenTL } from "./weatherScreen";
 
 // Main Timeline
 let mainTL = gsap.timeline();
-
 // let mainTL = gsap.timeline({paused:true});
 
 
-mainTL.add(starsTL);
-mainTL.add(logoTL,"-=2");
-mainTL.add(logoFadeOutTL);
+mainTL
+.add(starsTL)
+.add(logoTL,"-=2")
+.add(logoFadeOutTL)
 
-mainTL.add(menuEntryTL,"-=.05");
-mainTL.add(navEntryTL, "-=.75");
+.add(menuEntryTL,"-=.05")
+.add(navEntryTL, "-=.75")
 
-mainTL.add(mphEntryTL, "-=.5");
-mainTL.add(musicEntryTL,"-=.25");
-mainTL.add(gasEntryTL,"-=.5");
-mainTL.add(weatherEntryTL, "-=.5");
+.add(mphEntryTL, "-=.5")
+// .addLabel("marker")
+.add(musicEntryTL,"-=.25")
+.add(gasEntryTL,"-=.5")
+.add(weatherEntryTL, "-=.5")
 
-mainTL.add(dashFadeOutTL, "+=1");
-mainTL.add(weatherScreenTL);
+.add(dashFadeOutTL, "+=1")
+.add(weatherScreenTL);
 
+// mainTL.play("marker");
+// 
 
 //Scroll
-$( document ).ready(function() {
-    // let textLength = $("#scrollContainer").width();
-    // console.log(textLength + " is the text width");
-    gsap.to("#scrollContainer",{duration:4, x:-200, ease:"none", repeat:-1});
-});
+
+// export let scrollTL = gsap.timeline({paused:true});
+// // let scrollTL = gsap.timeline();
+
+// let titleWidth = $("#scrollContainer h1").width()
+// scrollTL.to("#scrollContainer",{x:-titleWidth, repeat:-1, duration:10, ease:"none"});
+
+// function controlScroll(){
+//     // gsap.set(".flames",{display:"block"});
+//     scrollTL.play()
+// }
 
 
+// // DEV Tools
+// GSDevTools.create(); 
 
-// DEV Tools
-GSDevTools.create(); 

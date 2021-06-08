@@ -20,11 +20,9 @@
 		
 		display: flex;
 		align-items: center;
-		
-		
 		grid-area: svg-container;
 
-		section{
+		#svg-content{
 			position: relative;
 			// border: solid 1px red;
 			width: 100%;
@@ -34,20 +32,7 @@
 				top:9.15%;
 				right:19.5%;
 				height: 25.75%;
-
-				// @include lg{
-				// 	top:9.25%;
-				// 	right:18%;
-				// 	height: 26%;
-				// }
-				
 			}
-
-			// #speedTag{
-			// 	position: absolute;
-			// 	color: white;
-			// 	font-size: 80px;
-			// }
 
 			svg{
 				width: 100%;
@@ -69,21 +54,7 @@
 				}
 				
 			}
-
-			#scroll{
-				// top: 0%;
-				position: absolute;
-
-				@include lg{
-					top: 40%;
-					left: 20%;
-				}
-			}
-
-			
-		}
-
-		
+		}	
 	}
 
 	// #musicCircleGroup{

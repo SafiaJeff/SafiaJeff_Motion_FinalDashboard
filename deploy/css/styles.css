@@ -434,43 +434,34 @@ textarea {
   align-items: center;
   grid-area: svg-container;
 }
-#svg-container > div section {
+#svg-container > div #svg-content {
   position: relative;
   width: 100%;
 }
-#svg-container > div section img {
+#svg-container > div #svg-content img {
   position: absolute;
   top: 9.15%;
   right: 19.5%;
   height: 25.75%;
 }
-#svg-container > div section svg {
+#svg-container > div #svg-content svg {
   width: 100%;
 }
-#svg-container > div section #speed {
+#svg-container > div #svg-content #speed {
   position: absolute;
   top: 22%;
   left: 24%;
 }
 @media (min-width: 992px) {
-  #svg-container > div section #speed {
+  #svg-container > div #svg-content #speed {
     top: 20%;
     left: 23%;
   }
 }
 @media (min-width: 1200px) {
-  #svg-container > div section #speed {
+  #svg-container > div #svg-content #speed {
     top: 20%;
     left: 23%;
-  }
-}
-#svg-container > div section #scroll {
-  position: absolute;
-}
-@media (min-width: 992px) {
-  #svg-container > div section #scroll {
-    top: 40%;
-    left: 20%;
   }
 }
 
@@ -499,23 +490,32 @@ textarea {
 }
 
 #scroll {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#scroll > div {
   overflow: hidden;
-  width: 20%;
-  border: 1px solid white;
-}
-#scroll > div #scrollContainer {
-  width: 48%;
+  width: 150px !important;
   border: 1px solid red;
-  display: flex;
-}
-#scroll > div #scrollContainer p {
-  font-size: 0.9375rem;
-  margin-right: 10px;
-  color: white;
+  height: 50px;
   white-space: nowrap;
+  position: absolute;
+}
+@media (min-width: 992px) {
+  #scroll {
+    top: 40%;
+    left: 20%;
+  }
+}
+#scroll #scrollContainer {
+  width: 242px;
+  display: flex;
+  white-space: nowrap;
+}
+#scroll #scrollContainer h1 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 0px;
+  border: 1px solid blue;
+  width: 250px;
+  color: white;
+}
+#scroll #scrollContainer h1 span {
+  color: black;
 }
