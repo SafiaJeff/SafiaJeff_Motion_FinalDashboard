@@ -47,25 +47,21 @@ mainTL
 .add(gasEntryTL,"-=.5")
 .add(weatherEntryTL, "-=.5")
 
-.add(dashFadeOutTL, "+.add(weatherScreenTL);
+.add(dashFadeOutTL, "+=1")
+.add(weatherScreenTL);
 
 mainTL.play("marker");
-
+// 
 
 //Scroll
-// $( document ).ready(function() {
-//     // let textLength = $("#scrollContainer").width();
-//     // console.log(textLength + " is the text width");
-//     gsap.to("#scrollContainer",{duration:4, x:-200, ease:"none", repeat:-1});
-// });
 
-// let scrollTL = gsap.timeline();
+let scrollTL = gsap.timeline();
 
-let titleWidth = $("h1").width()
+let titleWidth = $("#scrollContainer h1").width()
 // console.log(titleWidth); 
 // width is 283px
 
-scrollTL.to("#container",{x:-titleWidth, repeat:-1, duration:3, ease:"none"});
+scrollTL.to("#scrollContainer",{x:-titleWidth, repeat:-1, duration:3, ease:"none"});
 
 // // DEV Tools
 // GSDevTools.create(); 
