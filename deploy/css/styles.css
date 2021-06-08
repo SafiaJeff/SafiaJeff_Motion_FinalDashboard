@@ -448,9 +448,9 @@ textarea {
   width: 100%;
 }
 #svg-container > div section #speed {
+  position: absolute;
   top: 22%;
   left: 24%;
-  position: absolute;
 }
 @media (min-width: 992px) {
   #svg-container > div section #speed {
@@ -462,6 +462,15 @@ textarea {
   #svg-container > div section #speed {
     top: 20%;
     left: 23%;
+  }
+}
+#svg-container > div section #scroll {
+  position: absolute;
+}
+@media (min-width: 992px) {
+  #svg-container > div section #scroll {
+    top: 40%;
+    left: 40%;
   }
 }
 
@@ -487,4 +496,25 @@ textarea {
   #speedTag {
     font-size: 65px;
   }
+}
+
+#scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#scroll > div {
+  overflow: hidden;
+  padding: 20px 0;
+  width: 60%;
+}
+#scroll > div #scrollContainer {
+  width: 50%;
+  border: 1px solid red;
+  display: flex;
+}
+#scroll > div #scrollContainer p {
+  font-size: 0.9375rem;
+  margin-right: 10px;
+  color: white;
 }

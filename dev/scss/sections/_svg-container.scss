@@ -54,7 +54,7 @@
 			}
 
 			#speed{
-
+				position: absolute;
 				top:22%;
 				left:24%;
 
@@ -67,10 +67,20 @@
 					top:20%;
 					left:23%;
 				}
-
-				position: absolute;
 				
 			}
+
+			#scroll{
+				// top: 0%;
+				position: absolute;
+
+				@include lg{
+					top: 40%;
+					left: 40%;
+				}
+			}
+
+			
 		}
 
 		
