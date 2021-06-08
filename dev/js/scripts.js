@@ -3,7 +3,7 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import $ from "jquery"
+// import $ from "jquery"
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
@@ -29,8 +29,8 @@ import { weatherScreenTL } from "./weatherScreen";
 // import { speedCounter } from "./speed";
 
 // Main Timeline
-let mainTL = gsap.timeline();
-// let mainTL = gsap.timeline({paused:true});
+// let mainTL = gsap.timeline();
+let mainTL = gsap.timeline({paused:true});
 
 
 mainTL
@@ -42,7 +42,7 @@ mainTL
 .add(navEntryTL, "-=.75")
 
 .add(mphEntryTL, "-=.5")
-// .addLabel("marker")
+.addLabel("marker")
 .add(musicEntryTL,"-=.25")
 .add(gasEntryTL,"-=.5")
 .add(weatherEntryTL, "-=.5")
@@ -50,18 +50,23 @@ mainTL
 .add(dashFadeOutTL, "+=1")
 .add(weatherScreenTL);
 
-// mainTL.play("marker");
+mainTL.play("marker");
 // 
 
 //Scroll
 
-let scrollTL = gsap.timeline();
+// export let scrollTL = gsap.timeline({paused:true});
+// // let scrollTL = gsap.timeline();
 
-let titleWidth = $("#scrollContainer h1").width()
-// console.log(titleWidth); 
-// width is 283px
+// let titleWidth = $("#scrollContainer h1").width()
+// scrollTL.to("#scrollContainer",{x:-titleWidth, repeat:-1, duration:10, ease:"none"});
 
-scrollTL.to("#scrollContainer",{x:-titleWidth, repeat:-1, duration:3, ease:"none"});
+// function controlScroll(){
+//     // gsap.set(".flames",{display:"block"});
+//     scrollTL.play()
+// }
+
 
 // // DEV Tools
 // GSDevTools.create(); 
+

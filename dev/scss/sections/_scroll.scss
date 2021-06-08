@@ -1,6 +1,6 @@
 #scroll {
 	overflow: hidden;
-	width: 300px !important;
+	width: 150px !important;
 	// display: inline-block;
 	border: 1px solid red;
 	height: 50px;
@@ -24,8 +24,12 @@
 			margin: 0;
 			padding-left: 0px;
 			border: 1px solid blue;
-			width: 242px;
+			width: 250px;
 			color: white;
+
+			span{
+				color:black;
+			}
 			// flex-wrap: nowrap;
 		}
 	}

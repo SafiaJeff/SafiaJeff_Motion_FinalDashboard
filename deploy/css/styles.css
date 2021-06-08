@@ -491,7 +491,7 @@ textarea {
 
 #scroll {
   overflow: hidden;
-  width: 300px !important;
+  width: 150px !important;
   border: 1px solid red;
   height: 50px;
   white-space: nowrap;
@@ -513,6 +513,9 @@ textarea {
   margin: 0;
   padding-left: 0px;
   border: 1px solid blue;
-  width: 242px;
+  width: 250px;
   color: white;
+}
+#scroll #scrollContainer h1 span {
+  color: black;
 }

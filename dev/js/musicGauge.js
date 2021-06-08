@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 export let musicEntryTL = gsap.timeline();
+import $ from "jquery"
 
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin);
@@ -14,7 +15,17 @@ musicEntryTL
 //photo & icons
 .from("#simonDominicAlbum",{ duration: 1.5, alpha:0}, "-=.75")
 .from("#musicIcons",{ duration: .75, y:"-=20", alpha:0}, "-=1")
-.from("#scroll",{ duration: .75, y:"-=20", alpha:0}, "-=1")
-
-
+.from("#scroll",{ duration: 1, y:"-=20", alpha:0, onComplete: controlScroll}, "-=1")
 ;
+
+export let scrollTL = gsap.timeline({paused:true});
+// let scrollTL = gsap.timeline();
+
+let titleWidth = $("#scrollContainer h1").width()
+scrollTL.to("#scrollContainer",{x:-titleWidth, repeat:-1, duration:10, ease:"none"});
+
+function controlScroll(){
+    // gsap.set(".flames",{display:"block"});
+    scrollTL.play()
+}
+
