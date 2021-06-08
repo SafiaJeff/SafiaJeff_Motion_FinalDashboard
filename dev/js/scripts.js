@@ -29,25 +29,27 @@ import { weatherScreenTL } from "./weatherScreen";
 // import { speedCounter } from "./speed";
 
 // Main Timeline
-let mainTL = gsap.timeline();
+// let mainTL = gsap.timeline();
+let mainTL = gsap.timeline({paused:true});
 
-// let mainTL = gsap.timeline({paused:true});
 
+mainTL
+.add(starsTL)
+.add(logoTL,"-=2")
+.add(logoFadeOutTL)
 
-mainTL.add(starsTL);
-mainTL.add(logoTL,"-=2");
-mainTL.add(logoFadeOutTL);
+.add(menuEntryTL,"-=.05")
+.add(navEntryTL, "-=.75")
 
-mainTL.add(menuEntryTL,"-=.05");
-mainTL.add(navEntryTL, "-=.75");
+.add(mphEntryTL, "-=.5")
+.addLabel("marker")
+.add(musicEntryTL,"-=.25")
+.add(gasEntryTL,"-=.5")
+.add(weatherEntryTL, "-=.5")
 
-mainTL.add(mphEntryTL, "-=.5");
-mainTL.add(musicEntryTL,"-=.25");
-mainTL.add(gasEntryTL,"-=.5");
-mainTL.add(weatherEntryTL, "-=.5");
+.add(dashFadeOutTL, "+.add(weatherScreenTL);
 
-mainTL.add(dashFadeOutTL, "+=1");
-mainTL.add(weatherScreenTL);
+mainTL.play("marker");
 
 
 //Scroll
@@ -59,11 +61,11 @@ mainTL.add(weatherScreenTL);
 
 // let scrollTL = gsap.timeline();
 
-// let titleWidth = $("h1").width()
-// // console.log(titleWidth); 
-// // width is 283px
+let titleWidth = $("h1").width()
+// console.log(titleWidth); 
+// width is 283px
 
-// scrollTL.to("#container",{x:-titleWidth, repeat:-1, duration:3, ease:"none"});
+scrollTL.to("#container",{x:-titleWidth, repeat:-1, duration:3, ease:"none"});
 
 // // DEV Tools
-GSDevTools.create(); 
+// GSDevTools.create(); 
