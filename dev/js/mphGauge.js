@@ -23,34 +23,35 @@ mphEntryTL
 .from("#navNumbers path",{ duration: 1, alpha:0}, "-=1")
 
 //counter ...
-.from("#MPHtext",{ duration: .75, y:"-=20", alpha:0}, "counter")
-.from("#speed",{ duration: .75, y:"-=20", alpha:0}, "counter")
+.from("#MPHtext",{ duration: .75, y:"-=20", alpha:0}, "-=.75")
+.from("#speed",{ duration: .75, y:"-=20", alpha:0}, "-=.75")
 
 //Indication line
-.from("#mphIndicatorLine",{ duration: 1, drawSVG:0},"-=.5")
+.from("#mphIndicatorLine",{ duration: 2, drawSVG:0, onStart: startTimer}, "+=1")
 
 ;
 
-//COUNTER
+// COUNTER
 
-// let counterTL = gsap.timeline({paused:true});
+var counterSpeed = 30;
+var topSpeed = 50;
+var speedNumber = 0;
+var myVar;
 
-// // counterTL
 
-// var counterSpeed = 80;
-// var topSpeed = 50;
-// var speedNumber = 0;
+function startTimer(){
 
-// var myVar = setInterval(speedCounter, counterSpeed);
+    myVar = setInterval(speedCounter, counterSpeed);
+}
 
-// function speedCounter(){
-//     if (speedNumber < topSpeed) {
-// 		speedNumber++;
-// 		document.getElementById("speedTag").innerHTML = speedNumber;
-// 	} else {
-// 		clearInterval(myVar);
-// 	}
-// 	return speedNumber;
+function speedCounter(){
+    // console.log("counter");
+    if (speedNumber < topSpeed) {
+		speedNumber++;
+		document.getElementById("speedTag").innerHTML = speedNumber;
+	} else {
+		clearInterval(myVar);
+	}
+	return speedNumber;
 
-//     // counterTL.play()
-// }
+}
