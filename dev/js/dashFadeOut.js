@@ -14,6 +14,4 @@ dashFadeOutTL
 .to("#scroll",{alpha:0, duration: FadeTime, y:"+=20"}, "fadeout")
 .to("#speed",{alpha:0, duration: FadeTime, y:"+=20"}, "fadeout")
 
-
-
 ;
