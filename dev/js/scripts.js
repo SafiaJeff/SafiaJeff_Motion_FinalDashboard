@@ -46,11 +46,10 @@ mainTL.add(weatherEntryTL);
 $( document ).ready(function() {
     let textLength = $("#scrollContainer").width();
     // console.log(textLength + " is the text width");
-
-gsap.to("#scrollContainer",{duration:3, x:-textLength/2, ease:"none", repeat:-1});
+    gsap.to("#scrollContainer",{duration:4, x:-200, ease:"none", repeat:-1});
 });
 
 
 
 // DEV Tools
-GSDevTools.create();
+// GSDevTools.create();

@@ -504,12 +504,11 @@ textarea {
   justify-content: center;
 }
 #scroll > div {
-  overflow: hidden;
-  padding: 20px 0;
-  width: 60%;
+  width: 20%;
+  border: 1px solid white;
 }
 #scroll > div #scrollContainer {
-  width: 50%;
+  width: 48%;
   border: 1px solid red;
   display: flex;
 }
@@ -517,4 +516,5 @@ textarea {
   font-size: 0.9375rem;
   margin-right: 10px;
   color: white;
+  white-space: nowrap;
 }
