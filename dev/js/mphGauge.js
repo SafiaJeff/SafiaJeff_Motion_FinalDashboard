@@ -33,24 +33,24 @@ mphEntryTL
 
 //COUNTER
 
-// let counterTL = gsap.timeline({paused:true});
+let counterTL = gsap.timeline({paused:true});
 
-// // counterTL
+// counterTL
 
-// var counterSpeed = 80;
-// var topSpeed = 50;
-// var speedNumber = 0;
+var counterSpeed = 80;
+var topSpeed = 50;
+var speedNumber = 0;
 
-// var myVar = setInterval(speedCounter, counterSpeed);
+var myVar = setInterval(speedCounter, counterSpeed);
 
-// function speedCounter(){
-//     if (speedNumber < topSpeed) {
-// 		speedNumber++;
-// 		document.getElementById("speedTag").innerHTML = speedNumber;
-// 	} else {
-// 		clearInterval(myVar);
-// 	}
-// 	return speedNumber;
+function speedCounter(){
+    if (speedNumber < topSpeed) {
+		speedNumber++;
+		document.getElementById("speedTag").innerHTML = speedNumber;
+	} else {
+		clearInterval(myVar);
+	}
+	return speedNumber;
 
-//     // counterTL.play()
-// }
+    // counterTL.play()
+}
