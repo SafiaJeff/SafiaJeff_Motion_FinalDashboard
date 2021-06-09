@@ -8,7 +8,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin);
 
 gsap.set("#mphInnerCircle", { transformOrigin: "center center", rotate:"90" });
-gsap.set("#mphIndicatorLine", { transformOrigin: "center center", scaleX: -1, rotate: 114.5});
+// gsap.set("#mphIndicatorLine", { transformOrigin: "center center", scaleX: -1, rotate: 114.5});
 
 gsap.set("#mphGaugeLines path", { transformOrigin: "center center"});
 
@@ -26,32 +26,32 @@ mphEntryTL
 .from("#MPHtext",{ duration: .75, y:"-=20", alpha:0}, "-=.75")
 .from("#speed",{ duration: .75, y:"-=20", alpha:0}, "-=.75")
 
-//Indication line
-.from("#mphIndicatorLine",{ duration: 2, drawSVG:0, onStart: startTimer}, "+=1")
+// //Indication line
+// .from("#mphIndicatorLine",{ duration: 2, drawSVG:0, onStart: startTimer}, "+=1")
 
 ;
 
-// COUNTER
+// // COUNTER
 
-var counterSpeed = 30;
-var topSpeed = 50;
-var speedNumber = 0;
-var myVar;
+// var counterSpeed = 30;
+// var topSpeed = 50;
+// var speedNumber = 0;
+// var myVar;
 
 
-function startTimer(){
+// function startTimer(){
 
-    myVar = setInterval(speedCounter, counterSpeed);
-}
+//     myVar = setInterval(speedCounter, counterSpeed);
+// }
 
-function speedCounter(){
-    // console.log("counter");
-    if (speedNumber < topSpeed) {
-		speedNumber++;
-		document.getElementById("speedTag").innerHTML = speedNumber;
-	} else {
-		clearInterval(myVar);
-	}
-	return speedNumber;
+// function speedCounter(){
+//     // console.log("counter");
+//     if (speedNumber < topSpeed) {
+// 		speedNumber++;
+// 		document.getElementById("speedTag").innerHTML = speedNumber;
+// 	} else {
+// 		clearInterval(myVar);
+// 	}
+// 	return speedNumber;
 
-}
+// }

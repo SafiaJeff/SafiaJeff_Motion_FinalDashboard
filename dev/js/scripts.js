@@ -21,6 +21,8 @@ import { musicEntryTL } from "./musicGauge";
 import { mphEntryTL } from "./mphGauge";
 import { weatherEntryTL } from "./weatherGauge";
 
+import { speedUpTL } from "./speedUp";
+
 import { dashFadeOutTL } from "./dashFadeOut";
 import { weatherScreenTL } from "./weatherScreen";
 
@@ -29,8 +31,8 @@ import { weatherScreenTL } from "./weatherScreen";
 // import { speedCounter } from "./speed";
 
 // Main Timeline
-let mainTL = gsap.timeline();
-// let mainTL = gsap.timeline({paused:true});
+// let mainTL = gsap.timeline();
+let mainTL = gsap.timeline({paused:true});
 
 
 mainTL
@@ -42,15 +44,16 @@ mainTL
 .add(navEntryTL, "-=.75")
 
 .add(mphEntryTL, "-=.5")
-// .addLabel("marker")
+.addLabel("marker")
 .add(musicEntryTL,"-=.25")
 .add(gasEntryTL,"-=.5")
 .add(weatherEntryTL, "-=.5")
+.add(speedUpTL)
 
 .add(dashFadeOutTL, "+=1")
 .add(weatherScreenTL);
 
-// mainTL.play("marker");
+mainTL.play("marker");
 // 
 
 //Scroll
