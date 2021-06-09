@@ -21,6 +21,8 @@ import { musicEntryTL } from "./musicGauge";
 import { mphEntryTL } from "./mphGauge";
 import { weatherEntryTL } from "./weatherGauge";
 
+import { speedUpTL } from "./speedUp";
+
 import { dashFadeOutTL } from "./dashFadeOut";
 import { weatherScreenTL } from "./weatherScreen";
 
@@ -46,6 +48,7 @@ mainTL
 .add(musicEntryTL,"-=.25")
 .add(gasEntryTL,"-=.5")
 .add(weatherEntryTL, "-=.5")
+.add(speedUpTL, "+=1")
 
 .add(dashFadeOutTL, "+=1")
 .add(weatherScreenTL);
