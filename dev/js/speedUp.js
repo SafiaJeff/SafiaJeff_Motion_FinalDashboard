@@ -9,7 +9,7 @@ gsap.set("#mphIndicatorLine", { transformOrigin: "center center", scaleX: -1, ro
 
 speedUpTL
 //Indication line
-.from("#mphIndicatorLine",{ duration: 2, drawSVG:0, onStart: startTimer}, "+=1")
+.from("#mphIndicatorLine",{ duration: 2, drawSVG:0, onStart: startTimer})
 
 
 // COUNTER
