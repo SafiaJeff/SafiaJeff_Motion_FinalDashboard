@@ -48,9 +48,9 @@ mainTL
 .add(musicEntryTL,"-=.25")
 .add(gasEntryTL,"-=.5")
 .add(weatherEntryTL, "-=.5")
-.add(speedUpTL, "+=1")
+.add(speedUpTL, "+=.5")
 
-.add(dashFadeOutTL, "+=1")
+.add(dashFadeOutTL, "+=.5")
 .add(weatherScreenTL);
 
 // mainTL.play("marker");
